@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.nav-text {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+
+.hero-text {
+  font-family: var(--font-italianno), cursive;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 86px;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    font-size: 100px;
+    line-height: 108px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-text {
+    font-size: 133px;
+    line-height: 144px;
+  }
+}
+
+.about-heading {
+  font-family: var(--font-playfair), serif;
+  font-weight: 400;
+  color: #6B6B6B;
+  line-height: 1.2;
+}
+
+.about-body {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+  color: #6B6B6B;
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.about-tagline {
+  font-family: var(--font-playfair), serif;
+  font-weight: 400;
+  color: #6B6B6B;
+  font-style: italic;
+}
+
+.stat-number {
+  font-family: var(--font-italianno), cursive;
+  font-weight: 400;
+  color: #BBA085;
+}
+
+.stat-label {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+  color: #6B6B6B;
+}
+
+.services-subtitle {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+  color: #BBA085;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.services-title {
+  font-family: var(--font-playfair), serif;
+  font-weight: 400;
+  color: #2c2c2c;
+  text-transform: uppercase;
+}
+
+.service-card-title {
+  font-family: var(--font-playfair), serif;
+  font-weight: 400;
+  color: #2c2c2c;
+}
+
+.service-details {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+  color: #BBA085;
+  line-height: 1.8;
+}
+
+.service-price-label {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 300;
+  color: #BBA085;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.service-price {
+  font-family: var(--font-playfair), serif;
+  font-weight: 400;
+  color: #2c2c2c;
+}
+
+.custom-text {
+  font-family: var(--font-italianno), cursive;
+}
+
+.custom-text1 {
+  font-family: var(--font-playfair), serif;
+}
